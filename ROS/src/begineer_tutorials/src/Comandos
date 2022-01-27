@@ -1,0 +1,38 @@
+Building your nodes:
+cd ~/catkin_ws
+catkin_make
+
+RUN ROS NODE:
+cd ~/catkin_ws
+catkin_make
+source ./devel/setup.bash
+rosrun beginner_tutorials talker.py
+
+rosrun beginner_tutorials listener_pos.py
+rosrun beginner_tutorials listener.py
+rosrun beginner_tutorials listenmatlab
+
+$ rosrun beginner_tutorials add_two_ints_server.py
+$ rosrun beginner_tutorials add_two_ints_client.py
+$ 
+rosrun beginner_tutorials gps_listener.py
+$ 
+
+Using rqt_graph:
+$ rosrun rqt_graph rqt_graph
+
+Using rosmsg:
+$ rosmsg show beginner_tutorials/Num
+$ rosmsg show Num
+
+#Run WEB socket
+$ roslaunch rosbridge_server rosbridge_websocket.launch
+
+#EDITAR bashrc
+$ vim ~/.bashrc
+$ source ~/.bashrc
+
+#CD GEOMETRY MSGS
+$ roscd geometry_msgs
+
+

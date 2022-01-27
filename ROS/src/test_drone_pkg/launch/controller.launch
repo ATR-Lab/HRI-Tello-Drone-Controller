@@ -1,0 +1,3 @@
+<launch>
+  <node name="joyTello_node" pkg="test_drone_pkg" type="controller.py" output="screen"/>
+</launch>
